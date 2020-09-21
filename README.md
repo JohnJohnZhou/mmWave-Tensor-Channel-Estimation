@@ -6,4 +6,4 @@ Tensor Decomposition-Aided Channel Estimation for Millimeter Wave MIMO-OFDM
 Systems," in IEEE Journal on Selected Areas in Communications, 
 vol. 35, no. 7, pp. 1524-1538, July 2017.''
 
-The implementation of the Tensor algebra part is based on the open-source project https://gitlab.com/tensors/tensor_toolbox, where the utitlized toolbox in this repo has a minor revision to the original one to support complex values. 
+The implementation of the Tensor algebra is partially based on an open-source project https://gitlab.com/tensors/tensor_toolbox, where the utitlized toolbox in this repo has a minor revision to the original one in order to support complex values. 
