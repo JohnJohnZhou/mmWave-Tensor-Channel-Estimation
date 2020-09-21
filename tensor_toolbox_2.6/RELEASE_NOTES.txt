@@ -1,8 +1,37 @@
-Tensor Toolbox version 2.6
-by Brett W. Bader, Tamara G. Kolda, Jimeng Sun, Evrim Acar, 
-Daniel M. Dunlavy, Eric C. Chi, Jackson Mayo, et al.
-Copyright 2015, Sandia National Laboratories.
-Released February 6, 2015
+Tensor Toolbox version 3.1
+by Brett W. Bader, Tamara G. Kolda, Evrim Acar, Daniel M. Dunlavy, et al.
+Copyright 2019, Sandia National Laboratories.
+
+============================================
+Changes from Version 3.1 (June 4, 2019)
+============================================
+- Adding support for KTENSOR in EXPORT_DATA.
+- Fixing bug in KTENSOR/SCORE with zero lambdas in both inputs.
+- Adding SPTENMAT check on valid input. 
+
+============================================
+Changes from Version 2.6 (February 6, 2015)
+============================================
+- Changed license conditions: now open source BSD license.
+- New KTENSOR/VIZ function for visualizing the factors produced by the
+  CP decomposition.
+- Added new CP_SYM and TUCKER_SYM functions for symmetric tensor
+  decompositions. Added new SYMTENSOR and SYMKTENSOR classes with
+  limited functionality to support symmetric tensors.
+- Added new SUMTENSOR class that works with an implicit sum of tensors
+  without actually forming the result.
+- Added new CP-ARLS method that does alternating *RANDOMIZED* least
+  squares fitting for the CP decomposition per Battaglino et al.
+- New GCP_OPT method for generalized CP.
+- New CREATE_PROBLEM_BINARY method for generating problems where the
+  low-rank model corresponds to the odds of a 1.
+- Improve KTENSOR/FULL function.
+- Added SPTENSOR/SPONES function that replaces nonzero sparse tensor
+  elements with ones.
+- Removed memory-efficient Tucker (met) code.
+- Fixed formatting of lambda in ktensor/disp.
+- Fixed type of subs in import_data for sptensor data.
+- Made call to fixsigns in cp_als optional.
 
 ============================================
 Changes from Version 2.5 (February 1, 2012)
